@@ -1,0 +1,180 @@
+:root{
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent: #2196f3;
+  --white: #FFFFFF;
+  --black: #000000;
+  --background-color: #2F303A;
+
+  ;
+}
+
+
+/*Style header*/
+.list {
+  list-style: none;
+}
+body {
+  background-color: var(--white);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+
+}
+.logo {
+  color: var(--black);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+}
+
+.accent-logo {
+  color: var(--accent);
+}
+
+.site-nav .link, .contact .link {
+font-size: 14px;
+font-weight: 500;
+line-height: 1.14px;
+letter-spacing: 0.02em;
+text-decoration: none;
+
+}
+.site-nav .link {
+  color: var(--title-text-color);}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent);
+}
+/*Contacts*/
+.contact .link {
+  color: var(--primary-text-color);
+ 
+
+}
+.contact .link:focus,
+.contact .link:hover {
+  color: var(--accent);
+}
+
+
+/*Hiro*/
+.hiro {
+  background: var(--background-color);
+}
+.hiro-title {
+  color: var(--white);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.hiro-botton{
+  font-family: inherit;
+  background: var(--accent);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+
+
+}
+/*Section*/
+.section-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+}
+/*Features*/
+.features .title {
+  color: var(--title-text-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/*Our team*/
+ .our-team .name,
+ .our-team .profession{
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.our-team .name {
+  color: var(--title-text-color);
+  font-weight: 500;
+}
+
+/*Footer*/
+.footer {
+  background: var(--background-color);
+}
+
+
+.logo-footer {
+  color: var(--white);
+  
+}
+.footer-contact{
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+}
+
+
+/*Portfolio*/
+.portfolio-link{
+  text-decoration: none;
+}
+
+
+.portolio-list{
+  
+  background: #F5F4FA;
+  color: var(--title-text-color) ;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.portolio-list:hover,
+.portolio-list:focus{
+  background: var(--accent);
+  color: var(--white);
+
+}
+.portfolio-foto .portfolio-work{
+  color: var(--title-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2 ;
+  letter-spacing: 0.06em;
+  
+}
+.portfolio-foto .work-section{
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
