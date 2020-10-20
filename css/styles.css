@@ -12,6 +12,8 @@
 
 /*Style header*/
 .list {
+  padding: 0px;
+  margin: 0px;
   list-style: none;
 }
 body {
@@ -20,6 +22,24 @@ body {
   font-family: Roboto, sans-serif;
 
 }
+h2,
+h3,
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+.head{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+  
 .logo {
   color: var(--black);
   font-family: Raleway, sans-serif;
@@ -65,18 +85,30 @@ text-decoration: none;
 /*Hiro*/
 .hiro {
   background: var(--background-color);
+  text-align: center;
 }
 .hiro-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-top: 200px;
   color: var(--white);
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
+  
   text-transform: uppercase;
 
 }
 .hiro-botton{
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 200px;
+  margin-bottom: 200px;
+  
+
+
   font-family: inherit;
   background: var(--accent);
   color: var(--white);
@@ -86,11 +118,12 @@ text-decoration: none;
   letter-spacing: 0.06em;
   text-align: center;
 
-
-
 }
+
 /*Section*/
 .section-title {
+  margin: 0px;
+  padding-bottom: 50px;
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.16;
@@ -100,6 +133,8 @@ text-decoration: none;
 }
 /*Features*/
 .features .title {
+  margin-top: 0px;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-size: 14px;
   font-style: normal;
@@ -107,19 +142,33 @@ text-decoration: none;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  
+}
+.section{
+  padding-top: 94px;
+}
+.features-text{
+  margin: 0px;
 }
 /*Our team*/
+.team{
+  padding-top: 94px;
+}
  .our-team .name,
  .our-team .profession{
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  text-align: center;
+ }
+.our-team .profession{
+  margin-bottom: 30px;
 }
 
 .our-team .name {
   color: var(--title-text-color);
   font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 /*Footer*/
@@ -129,8 +178,15 @@ text-decoration: none;
 
 
 .logo-footer {
+  display: inline-block;
   color: var(--white);
+  margin-top: 60px;
+  margin-bottom: 20px;
   
+}
+.addres{
+  display: inline-block;
+  margin-bottom: 60px;
 }
 .footer-contact{
   color: var(--white);
