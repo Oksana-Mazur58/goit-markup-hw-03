@@ -145,7 +145,8 @@ text-decoration: none;
   
 }
 .section{
-  padding-top: 94px;
+  padding-bottom: 94px;
+
 }
 .features-text{
   margin: 0px;
@@ -202,9 +203,16 @@ text-decoration: none;
 .portfolio-link{
   text-decoration: none;
 }
+.portf-nav{
+  display: inline-block;
+  padding-top: 94px;
+  padding-bottom: 34px;
+  
+}
 
 
-.portolio-list{
+.portolio-button{
+  border-radius: 4px;
   
   background: #F5F4FA;
   color: var(--title-text-color) ;
@@ -213,14 +221,18 @@ text-decoration: none;
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
+  
 }
-.portolio-list:hover,
-.portolio-list:focus{
+.portolio-button:hover,
+.portolio-button:focus{
   background: var(--accent);
   color: var(--white);
 
+
 }
 .portfolio-foto .portfolio-work{
+  margin-top: 20px;
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-size: 18px;
   font-weight: 700;
@@ -229,6 +241,7 @@ text-decoration: none;
   
 }
 .portfolio-foto .work-section{
+  margin-bottom: 20px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 30px;
