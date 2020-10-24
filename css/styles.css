@@ -70,6 +70,9 @@ p{
 .site-nav{
   display: inline-flex;
 }
+.site-nav .link :not( :last-child) { 
+  margin-right: 50px; 
+}
 
 .site-nav .link, .contact .link {
   display: block;
@@ -85,13 +88,6 @@ p{
 .site-nav .link {
   color: var(--title-text-color);
 }
-/* .item :not(:last-child ) { 
-  margin-right : 50 px ; 
-} */
-
-.site-nav .link {
-margin-right:  50px;
-} 
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -171,7 +167,16 @@ margin-right:  50px; ;
 .features{
   display: flex;
 }
-
+.feature .item{
+  margin-right: 30px;
+  flex-basis : calc(100% / 4 - 30px) ; 
+}
+.features:not(:last-child) { 
+  margin-right : 30px; 
+}
+.features-title{
+  display: none;
+}
 .features .title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -186,7 +191,8 @@ margin-right:  50px; ;
 .features .item{
   display: inline-block;
   
-  margin-right: 30;
+  margin-right: 30px;
+  margin-top: 94px;
 }
 
 .section{
@@ -198,14 +204,31 @@ margin-right:  50px; ;
 /* Our-work */
 .our-work{
   display: inline-flex;
-  flex-wrap: wrap ;
-  margin-right: 30px ;
-  
+  flex-wrap: wrap;
+  margin-right: -30px;
 }
+.photo-item{
+  margin-right: 30px;
+  width: calc((100%-60px)/3);
+}
+.photo-item:not(:last-child){
+  margin-right: 30px;
+}
+
 /*Our team*/
 .team{
   padding-top: 94px;
 }
+.our-team{
+    flex-wrap: wrap;
+    margin-right:-30px ;
+}
+.our-team-item{
+  display: inline-block;
+  margin-right: 30px ;
+  width: calc((100%-90px)/4) ;
+}
+
  .our-team .name,
  .our-team .profession{
   font-size: 16px;
@@ -260,6 +283,13 @@ margin-right:  50px; ;
   padding-bottom: 34px;
   
 }
+.portf-nav{
+  display: inline-flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+
+}
+
 
 
 .portolio-button{
@@ -279,6 +309,18 @@ margin-right:  50px; ;
   background: var(--accent);
   color: var(--white);
 
+
+}
+.portfolio-foto{
+  display: inline-flex;
+  flex-wrap: wrap ;
+  margin-right: -30px;
+  margin-top: -30px;
+}
+.portf-item{
+  margin-right: 30px;
+  margin-top: 30px;
+  flex-basis : calc(100% / 3 - 30px) ; 
 
 }
 .portfolio-foto .portfolio-work{
