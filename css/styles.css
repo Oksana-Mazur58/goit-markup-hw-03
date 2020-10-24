@@ -16,6 +16,11 @@
   margin: 0px;
   list-style: none;
 }
+.img{
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   background-color: var(--white);
   color: var(--primary-text-color);
@@ -140,8 +145,6 @@ margin-right:  50px; ;
   min-width: 200px;
   margin-bottom: 200px;
   
-
-
   font-family: inherit;
   background: var(--accent);
   color: var(--white);
@@ -168,6 +171,7 @@ margin-right:  50px; ;
 .features{
   display: flex;
 }
+
 .features .title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -177,15 +181,26 @@ margin-right:  50px; ;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  
+  text-transform: uppercase;  
 }
+.features .item{
+  display: inline-block;
+  
+  margin-right: 30;
+}
+
 .section{
   padding-bottom: 94px;
-
 }
 .features-text{
   margin: 0px;
+}
+/* Our-work */
+.our-work{
+  display: inline-flex;
+  flex-wrap: wrap ;
+  margin-right: 30px ;
+  
 }
 /*Our team*/
 .team{
