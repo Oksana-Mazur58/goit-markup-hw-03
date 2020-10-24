@@ -225,12 +225,14 @@ margin-right:  50px; ;
 }
 .our-team-item{
   display: inline-block;
-  margin-right: 30px ;
-  width: calc((100%-90px)/4) ;
+  margin-right: 30px;
+  width: calc((100%-90px)/4);
+
 }
 
  .our-team .name,
  .our-team .profession{
+   text-align: center;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
