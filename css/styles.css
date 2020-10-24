@@ -41,13 +41,16 @@ p{
   padding-right: 15px;
   outline: 2px solid tomato;
 }
-/* .head{
-  padding-top: 32px;
-  padding-bottom: 32px;
-} */
+
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+}
+.navigation{
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
   
 .logo {
@@ -70,7 +73,7 @@ p{
 .site-nav{
   display: inline-flex;
 }
-.site-nav .link :not( :last-child) { 
+.site-nav :not( :last-child) { 
   margin-right: 50px; 
 }
 
@@ -97,18 +100,14 @@ p{
 .contact{
   display: flex;
   margin-left: auto;
-
+}
+.contact :not( :last-child) { 
+  margin-right: 50px; 
 }
 .contact .link {
   color: var(--primary-text-color);
 
 }
-
-.contact .mail{
-margin-right:  50px; ;
-}
-
-
 
 .contact .link:focus,
 .contact .link:hover {
@@ -280,9 +279,10 @@ margin-right:  50px; ;
   text-decoration: none;
 }
 .portf-nav{
-  display: inline-block;
+  display: inline-flex;
   padding-top: 94px;
   padding-bottom: 34px;
+  justify-content: center;
   
 }
 .portf-nav{
