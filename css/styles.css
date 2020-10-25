@@ -17,9 +17,11 @@
   list-style: none;
 }
 .img{
-  display: inline-block;
+  display:  inline-block;
   max-width: 100%;
   height: auto;
+  
+
 }
 body {
   background-color: var(--white);
@@ -39,7 +41,7 @@ p{
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+
 }
 
 .main-nav {
@@ -50,7 +52,7 @@ p{
 .navigation{
   display: flex;
   align-items: center;
-  margin: auto;
+  margin-right: auto;
 }
   
 .logo {
@@ -164,15 +166,14 @@ p{
 }
 /*Features*/
 .features{
-  display: flex;
+  display: inline-flex;
+  margin-right: -30px;
 }
 .feature .item{
   margin-right: 30px;
-  flex-basis : calc(100% / 4 - 30px) ; 
+  flex-basis : calc((100% / 4) - 30px); 
 }
-.features:not(:last-child) { 
-  margin-right : 30px; 
-}
+
 .features-title{
   display: none;
 }
@@ -202,30 +203,32 @@ p{
 }
 /* Our-work */
 .our-work{
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+  
+  
 }
 .photo-item{
+  padding: 0px;
   margin-right: 30px;
-  width: calc((100%-60px)/3);
+  flex-basis: calc((100% / 3) - 30px);
+
 }
-.photo-item:not(:last-child){
-  margin-right: 30px;
-}
+
 
 /*Our team*/
 .team{
   padding-top: 94px;
 }
 .our-team{
+  display: flex;
     flex-wrap: wrap;
     margin-right:-30px ;
 }
 .our-team-item{
-  display: inline-block;
   margin-right: 30px;
-  width: calc((100%-90px)/4);
+  flex-basis: calc((100% / 4) - 30px);
 
 }
 
@@ -279,19 +282,15 @@ p{
   text-decoration: none;
 }
 .portf-nav{
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 94px;
   padding-bottom: 34px;
-  justify-content: center;
-  
 }
-.portf-nav{
-  display: inline-flex;
-  flex-wrap: wrap ;
-  justify-content: center;
-
+.portf-nav :not( :last-child) { 
+  margin-right: 8px; 
 }
-
 
 
 .portolio-button{
